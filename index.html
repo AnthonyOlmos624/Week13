@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <div class="container">
+      
+      <h1 class="mb-4">Video Game CRUD App</h1>
+   <div>
+        <!-- Need a form for adding a new video game-->
+        <form id="gameForm">
+          <div class="mb-3">
+              <label for="title" class="form-label">Game Title</label>
+              <input type="text" class="form-control" id="title" placeholder="Enter game title" required>
+          </div>
+          <div class="mb-3">
+              <label for="genre" class="form-label">Genre</label>
+              <input type="text" class="form-control" id="genre" placeholder="Enter game genre" required> 
+          </div>
+          <button type="submit" class="btn btn-primary">Add Game</button>
+       </form>
+   </div>
+
+       <!--Need a section to display the list of games-->
+
+       <h2 class="mt-5">Game List</h2>
+       <ul id="gameList" class="list-group"></ul>
+  </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
